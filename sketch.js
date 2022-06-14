@@ -37,7 +37,7 @@ function draw() {
 
 
  if (occupancy > 10) {
-  background(0,0,256);
+  background(0,135,135);
   text("wait for me to set up", windowWidth/2, windowHeight/2);
 
   allowMessage = false;
