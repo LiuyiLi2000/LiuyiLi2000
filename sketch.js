@@ -38,7 +38,7 @@ function draw() {
 
  if (occupancy > 10) {
   background(255);
-  text("wait for someone to leave", windowWidth/2, windowHeight/2);
+  text("wait for someone", windowWidth/2, windowHeight/2);
 
   allowMessage = false;
 
@@ -49,7 +49,7 @@ function draw() {
   
  } else {
   background(255);
-  text("wait for someone else to join", windowWidth/2, windowHeight/2); 
+  text("wait for someone again", windowWidth/2, windowHeight/2); 
   allowmessage = false;
 
   }
@@ -60,8 +60,8 @@ function sendTheMessage() {
   dataServer.publish({
     channel: channelName,
     message: {
-      x: mouseX,
-      y: mouseY
+      x: mouseY,
+      y: mouseX
     },
   });
 }
