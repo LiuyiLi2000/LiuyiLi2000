@@ -37,8 +37,8 @@ function draw() {
 
 
  if (occupancy > 10) {
-  background(255);
-  text("wait for someone", windowWidth/2, windowHeight/2);
+  background(0,0,256);
+  text("wait for me to set up", windowWidth/2, windowHeight/2);
 
   allowMessage = false;
 
@@ -49,7 +49,7 @@ function draw() {
   
  } else {
   background(255);
-  text("wait for someone again", windowWidth/2, windowHeight/2); 
+  text("wait for me to finish", windowWidth/2, windowHeight/2); 
   allowmessage = false;
 
   }
